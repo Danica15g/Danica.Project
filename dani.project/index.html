@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    </title>Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        </head>
+        <body>
+            <div id="header">
+                <div class="container">   
+                    <nav>
+                        <ul>
+                            <li><a href="#"> Home </a></li>
+                            <li><a href="#"> About </a></li>
+                            <li><a href="#"> Service </a></li>
+                            <li><a href="#"> Design </a></li>
+                            <li><a href="#"> Contact </a></li>   
+                        </ul>
+                    </nav>
+                    <div class="header-text"></div>
+                         <h1>Hallo I'm<span> Danica Mae </span><br>Front-End Developer<span></span><br> and UI/UX Designer</h1>
+                        </div>
+                    </div>
+                </div>     
+            </div>
+            <!---------------------about-------------->
+            <div id="about">
+                <div class="container">
+                    <div class="row">
+                        <div class="about-col-1">
+                                <img src="pics/pic.1.jpg">
+                            </div>
+                            <div class="about-col-2">
+                                <h1 class="sub-title"> About Me</h1>
+                                <p>I'm a front-end developer and UI/UX designer with a passion for creating beautiful ans user-friendly web ecpercience. I have experience working on a variety of projects 
+                                I'm also a big fan of open source software and contribute to a number of popular projects. To see some of the website, please check out my project below.If you are 
+                                interested in working with me or have any questions, feel free to cantact me via email or phone.  </p>
+
+                                <div class="tab-titles">
+                                    <p class="tab-link active-link" onclick="opentab('skills')">Skills</p>
+                                    <p class="tab-link"  onclick="opentab('interest')">Interest</p>
+                                    <p class="tab-link"  onclick="opentab('educational background')">Educational Background</p>
+                                </div>
+                                <div class="tab-contents active-tab" id="skills">
+                                    <ul>
+                                        <li><span>UI/UX</span><br>Designing Web</li>
+                                        <li><span>App Development</span><br>Building Android apps</li>
+                                    </ul>
+                                </div>
+                                <div class="tab-contents" id="interest">
+                                    <ul>
+                                        <li><span>App Development</span>Designing Web <br></li>
+                                    </ul>
+                                </div>
+                                <div class="tab-contents" id="educational background">
+                                    <ul>
+                                        <li><span>2018</span><br>Design leader at NCA Institute</li>
+                                        <li><span>2017</span><br>Design Training at NCA Institute</li>
+                                    </ul>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!------------project--------->
+<div id="project">
+    <div class="conatiner">
+        <h1 class="sub-title"> My Project</h1>
+        <div class="project-list">
+            
+            <div>
+                <h2>Web Design</h2>
+                <p>Lorem ipsum dolor sit amet. Et iste asperiores in veniam impedit et reiciendis nulla 33 exercitationem doloribus aut nihil laboriosam? Est necessitatibus ipsam cum voluptas nemo cum voluptas culpa? 33 expedita quidem qui blanditiis mollitia sed saepe modi non error veritatis eos illo sint sed maxime quia. Quo vitae esse id tenetur voluptatem et libero magni ut dolores quaerat At minus ipsa ut accusantium officia.</p>
+            <p>Lorem ipsum dolor sit amet. Et iste asperiores in veniam impedit et reiciendis nulla 33 exercitationem doloribus aut nihil laboriosam? Est necessitatibus ipsam cum voluptas nemo cum voluptas culpa? 33 expedita quidem qui blanditiis mollitia sed saepe modi non error veritatis eos illo sint sed maxime quia. Quo vitae esse id tenetur voluptatem et libero magni ut dolores quaerat At minus ipsa ut accusantium officia.</p>
+            <a href="#">Learn more</a>
+        </div>
+            <div>
+                <h2>UI/UX Design</h2>
+                <p>Lorem ipsum dolor sit amet. Et iste asperiores in veniam impedit et reiciendis nulla 33 exercitationem doloribus aut nihil laboriosam? Est necessitatibus ipsam cum voluptas nemo cum voluptas culpa? 33 expedita quidem qui blanditiis mollitia sed saepe modi non error veritatis eos illo sint sed maxime quia. Quo vitae esse id tenetur voluptatem et libero magni ut dolores quaerat At minus ipsa ut accusantium officia.</p>
+               <p>Lorem ipsum dolor sit amet. Et iste asperiores in veniam impedit et reiciendis nulla 33 exercitationem doloribus aut nihil laboriosam? Est necessitatibus ipsam cum voluptas nemo cum voluptas culpa? 33 expedita quidem qui blanditiis mollitia sed saepe modi non error veritatis eos illo sint sed maxime quia. Quo vitae esse id tenetur voluptatem et libero magni ut dolores quaerat At minus ipsa ut accusantium officia.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+        </div>
+    </div>
+
+            <!------------contact------------>
+<div id="contact">
+    <div class="conatiner">
+        <div class="row">
+           <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fas fa-paper-plane"></i>contact#:</p>
+            <p><i class=""></i>09129337647</p>
+            <div class="social-icons">
+                <a href="https://facebook.com/"><i class="fab fa-facebook"></i></a>
+                <a href=""><i class="fab fa-twitter-square"></i></a>
+                <a href=""><i class="fab fa-Instagram"></i></a>
+                <a href=""><i class="fab fa-linkedin"></i></a>
+            </div>
+           </div>
+           <div class="contact-right"></div>
+           <form>
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email required">
+            <textarea name="Message"rows="6" placeholder="Your Message"></textarea>
+            <button type="submit">Submit</button>
+           </form>
+        </div>
+    </div>
+    
+    </div>
+    
+            <script>
+                var tablinks = document.getElementsByClassName("tab-links");
+                var tabcontents = document.getElementsByClassName("tab-contents");
+                function opentab(tabname){
+                    for (tablinks of tablinks){
+                        tablink.classList.remove("active-link");
+                    }
+                    for (tabcontents of tabcontents){
+                        tabcontents.classList.remove("active-tab");
+                }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+            }
+            
+            </script>
+    </body>
+    </html>
+   
